@@ -1,0 +1,39 @@
+package selfProgramming;
+
+// Write a Java program that accepts three numbers and prints "All numbers are equal" if all three numbers are equal, 
+//"All numbers are different" if all three numbers are different and "Neither all are equal or different" otherwise.
+
+import java.util.Scanner;
+
+class Integer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int num1;
+		int num2;
+		int num3;
+		
+		System.out.print("Input first number: ");
+		num1=input.nextInt();
+		System.out.print("Input second number: ");
+		num2=input.nextInt();
+		System.out.print("Input third number: ");
+		num3=input.nextInt();
+		
+		if (num1== num2 && num1 == num3)
+		{
+			System.out.println("Numbers are equal.");
+		}
+		else if ((num1 == num2) || (num1 == num3) || (num3 == num2))
+		{
+			System.out.println("Neither all are different or equal.");
+		}
+		else
+		{
+			System.out.println("All numbers are different.");
+		}
+
+	}
+
+}
