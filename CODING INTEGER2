@@ -1,0 +1,28 @@
+package selfProgramming;
+
+//Write a Java program that accepts three integer values and return true if one of them is 20 or more 
+//and less than the substraction of others.
+
+import java.util.Scanner;
+
+class Integer2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int num1;
+		int num2;
+		int num3;
+		
+		System.out.print("Input first number: ");
+		num1=input.nextInt();
+		System.out.print("Input second number: ");
+		num2=input.nextInt();
+		System.out.print("Input third number: ");
+		num3=input.nextInt();
+		
+		System.out.println((Math.abs(num1 - num2) >= 20 || Math.abs(num2 - num3) >= 20) || Math.abs(num3 - num1) >= 20);
+
+	}
+
+}
